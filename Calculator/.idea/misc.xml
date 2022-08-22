@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/button_custom.xml" value="0.1" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/button_disabled.xml" value="0.134" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/button_normal.xml" value="0.1" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/button_pressed.xml" value="0.134" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/button_standby.xml" value="0.134" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/button_states.xml" value="0.1" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_button_clear.xml" value="0.253" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_button_numeric.xml" value="0.1175" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_button_operation.xml" value="0.101" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_clear_button.xml" value="0.1175" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_green_ripple.xml" value="0.1175" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_numeric_button.xml" value="0.1175" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_operation_button.xml" value="0.1175" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_ripple_clear.xml" value="0.1175" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_ripple_equals.xml" value="0.1" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_ripple_numeric.xml" value="0.109" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_ripple_operation.xml" value="0.101" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/calculator_vector_backspace.xml" value="0.1175" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.1" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_krillin.xml" value="0.286" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_square_0.xml" value="0.286" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/layout-land/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/layout/animation_layout.xml" value="0.3875" />
+        <entry key="..\:/Users/Brandon/AndroidStudioProjects/Calculator/app/src/main/res/layout/layout_land.xml" value="0.20208333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

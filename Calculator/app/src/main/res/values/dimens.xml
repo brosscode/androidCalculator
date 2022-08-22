@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="very_small">1dp</dimen>
+    <dimen name="small">4dp</dimen>
+    <dimen name="medium">8dp</dimen>
+    <dimen name="large">16dp</dimen>
+    <dimen name="very_large">24dp</dimen>
+
+
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_medium">22sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_very_large">48sp</dimen>
+
+</resources>

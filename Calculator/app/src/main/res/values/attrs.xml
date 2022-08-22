@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="backgroundColor" format="color" />
+    <attr name="numberPadColor" format="color" />
+    <attr name="midgroundColor" format="color" />
+
+    <attr name="fontFamily" format="string" />
+    <attr name="fontColor" format="color" />
+    <attr name="historyFontSize" format="dimension" />
+    <attr name="userFontSize" format="dimension" />
+
+    <attr name="buttonColorNumeric" format="color" />
+    <attr name="buttonRippleNumeric" format="color" />
+    <attr name="buttonColorOperand" format="color"/>
+    <attr name="buttonRippleOperand" format="color" />
+    <attr name="buttonColorEquals" format="color"/>
+    <attr name="buttonColorClear" format="color" />
+    <attr name="buttonRippleClear" format="color" />
+    <attr name="strokeColor" format="color" />
+
+    <attr name="operandFontSize" format="dimension"/>
+    <attr name="buttonFontSize" format="dimension" />
+    <attr name="buttonPadding" format="dimension" />
+    <attr name="buttonMargin" format="dimension" />
+    <attr name="buttonTextSize" format="dimension" />
+    <attr name="buttonRadius" format="dimension" />
+    <attr name="buttonStrokeWidth" format="dimension"/>
+
+
+</resources>

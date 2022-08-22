@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/calculatorHistory"
+            style="@style/history"
+            android:layout_weight="1"
+            tools:text="Calculator History" />
+
+        <EditText
+            android:id="@+id/userInput"
+            style="@style/answer"
+            tools:text="Numbers Go Here" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/numberPad"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/buttonBar"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/backSpace"
+                style="@style/numericButton"
+                android:src="@drawable/calculator_vector_backspace" />
+
+            <TextView
+                style="@style/numericButton"
+                android:text="C"
+                android:visibility="invisible" />
+
+            <TextView
+                style="@style/numericButton"
+                android:text="C"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/clearInput"
+                style="@style/clearButton"
+                android:text="C" />
+
+            <TextView
+                android:id="@+id/divide"
+                style="@style/operationButton"
+                android:text="÷" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonBar"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/squared"
+                style="@style/numericButton"
+                android:text="x²" />
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/numericButton"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/numericButton"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/numericButton"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/operationButton"
+                android:text="×" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonBar"
+            android:layout_weight="1"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/squareRoot"
+                style="@style/numericButton"
+                android:text="√x" />
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/numericButton"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/numericButton"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/numericButton"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/minus"
+                style="@style/operationButton"
+                android:text="−" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonBar"
+            android:layout_weight="1"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/xToTheY"
+                style="@style/numericButton"
+                android:text="xʸ" />
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/numericButton"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/numericButton"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/three"
+                style="@style/numericButton"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/plus"
+                style="@style/operationButton"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/buttonBar"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/pi"
+                style="@style/numericButton"
+                android:text="π" />
+
+            <TextView
+                android:id="@+id/plusMinus"
+                style="@style/numericButton"
+                android:layout_weight="1"
+                android:text="±" />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/numericButton"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/decimal"
+                style="@style/numericButton"
+                android:text="." />
+
+            <TextView
+                android:id="@+id/equals"
+                style="@style/equalsButton"
+                android:text="=" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

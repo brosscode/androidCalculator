@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Resource Colors-->
+    <color name="blue_100">#6688CC</color>
+    <color name="green_200">#224422</color>
+    <color name="green_100">#66CC22</color>
+    <color name="grey_150">#242424</color>
+    <color name="grey_100">#222222</color>
+    <color name="black_100">#111111</color>
+
+    <!--Light Theme Colors-->
+    <!--Buttons-->
+    <color name="grey_200">#333333</color>
+    <!--Top Area (History + User Input)-->
+    <color name="white_100">#eeeeee</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

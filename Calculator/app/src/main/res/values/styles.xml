@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CalculatorTheme.DayNight" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--Backgrounds-->
+        <item name="backgroundColor">@color/white</item>
+        <item name="numberPadColor">@color/black_100</item>
+        <item name="midgroundColor">@color/white_100</item>
+
+        <!--Fonts-->
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="historyFontSize">@dimen/text_small</item>
+        <item name="userFontSize">@dimen/text_very_large</item>
+        <item name="fontColor">@color/white</item>
+
+        <!--Buttons-->
+        <item name="buttonColorNumeric">@color/grey_200</item>
+        <item name="buttonRippleNumeric">@color/blue_100</item>
+        <item name="buttonColorOperand">@color/green_200</item>
+        <item name="buttonRippleOperand">@color/green_100</item>
+        <item name="buttonColorEquals">@color/green_100</item>
+        <item name="buttonColorClear">@color/blue_100</item>
+        <item name="buttonRippleClear">@color/white</item>
+        <item name="strokeColor">@color/grey_150</item>
+
+        <item name="operandFontSize">@dimen/text_small</item>
+        <item name="buttonFontSize">@dimen/text_medium</item>
+        <item name="buttonPadding">@dimen/large</item>
+        <item name="buttonMargin">@dimen/medium</item>
+        <item name="buttonRadius">@dimen/very_large</item>
+        <item name="buttonStrokeWidth">@dimen/very_small</item>
+    </style>
+
+
+    <style name="numberPad">
+        <item name="android:background">?numberPadColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="buttonBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="history">
+        <item name="backgroundColor">?midgroundColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">bottom|end</item>
+    </style>
+
+    <style name="answer">
+        <item name="android:textSize">?userFontSize</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="numericButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/calculator_ripple_numeric</item>
+        <item name="android:textSize">?buttonFontSize</item>
+        <item name="android:padding">?buttonPadding</item>
+        <item name="android:layout_margin">?buttonMargin</item>
+        <item name="android:fontFamily">?fontFamily</item>
+        <item name="android:textColor">?fontColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="clearButton">
+        <item name="android:background">@drawable/calculator_ripple_clear</item>
+        <item name="android:textSize">?buttonFontSize</item>
+        <item name="android:padding">?buttonPadding</item>
+        <item name="android:layout_margin">?buttonMargin</item>
+        <item name="android:fontFamily">?fontFamily</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">?fontColor</item>
+    </style>
+
+    <style name="operationButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/calculator_ripple_operation</item>
+        <item name="android:textSize">?buttonFontSize</item>
+        <item name="android:padding">?buttonPadding</item>
+        <item name="android:layout_margin">?buttonMargin</item>
+        <item name="android:fontFamily">?fontFamily</item>
+        <item name="android:textColor">?fontColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="equalsButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/calculator_ripple_equals</item>
+        <item name="android:textSize">?buttonFontSize</item>
+        <item name="android:padding">?buttonPadding</item>
+        <item name="android:layout_margin">?buttonMargin</item>
+        <item name="android:fontFamily">?fontFamily</item>
+        <item name="android:textColor">?fontColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>
