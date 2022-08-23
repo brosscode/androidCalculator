@@ -5,10 +5,10 @@ import org.junit.Assert.assertNotEquals
 import org.junit.Test
 import kotlin.math.PI
 
-private val _mathOmnissiah = MathOmnissiah()
-
 class AddUnitTests {
 // assert the numericString
+
+    private val _mathOmnissiah = MathOmnissiah()
 
     // Adding
     @Test
