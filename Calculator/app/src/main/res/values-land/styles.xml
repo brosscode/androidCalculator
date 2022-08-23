@@ -5,7 +5,7 @@
 
         <!--Backgrounds-->
         <item name="backgroundColor">@color/white</item>
-        <item name="numberPadColor">@color/black_100</item>
+        <item name="numberPadColor">@color/grey_100</item>
         <item name="midgroundColor">@color/white_100</item>
 
         <!--Fonts-->
@@ -51,6 +51,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:gravity">bottom|end</item>
+        <item name="android:paddingStart">@dimen/small</item>
+        <item name="android:paddingEnd">@dimen/small</item>
     </style>
 
     <style name="answer">
@@ -58,6 +60,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:gravity">end</item>
+        <item name="android:paddingStart">@dimen/small</item>
+        <item name="android:paddingEnd">@dimen/small</item>
     </style>
 
     <style name="numericButton">

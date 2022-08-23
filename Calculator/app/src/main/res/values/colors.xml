@@ -3,8 +3,11 @@
 
     <!--Resource Colors-->
     <color name="blue_100">#6688CC</color>
+    <color name="blue_200">#323D59</color>
+    <color name="green_300">#335533</color>
     <color name="green_200">#224422</color>
     <color name="green_100">#66CC22</color>
+    <color name="green_50">#66EE55</color>
     <color name="grey_150">#242424</color>
     <color name="grey_100">#222222</color>
     <color name="black_100">#111111</color>

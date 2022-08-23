@@ -6,7 +6,7 @@
         <shape>
             <corners android:radius="?buttonRadius"/>
             <solid android:color="?buttonColorClear"/>
-            <stroke android:width="?buttonStrokeWidth"/>
+            <stroke android:width="?buttonStrokeWidth" android:color="@color/blue_200"/>
         </shape>
     </item>
 

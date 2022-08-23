@@ -33,6 +33,7 @@ class MathOmnissiah {
     // track which value we are adjusting
     private var adjustValueOne: Boolean = true
     private var equalsHitLast: Boolean = false
+    private var piInUse: Boolean = false
 
     // takes in value from button press and adds to strings
     fun addDigit(s: String): String {
@@ -101,6 +102,7 @@ class MathOmnissiah {
 
     // updates the history variables. called by CallOperation.
     private fun updateHistory(s: String?) {
+        if (piInUse) return
         if (equalsHitLast) {historyValueOne = numericString; return}
         if (adjustValueOne) historyValueOne = s
         else historyValueTwo = s
@@ -108,6 +110,7 @@ class MathOmnissiah {
 
     // updates when an operation of any kind is pressed
     private fun updateValues(s: String?) {
+        if (piInUse) return
         if (equalsHitLast) {valueOne = numericString; return}
         if (adjustValueOne) valueOne = s
         else valueTwo = s
@@ -144,10 +147,13 @@ class MathOmnissiah {
         var s1: String = historyValueOne.toString()
         var s2: String = historyValueTwo.toString()
         val o: Operation? = operation
-        if (s1.toBigDecimal() == PI.toBigDecimal()) {
+        Log.d("Pi", PI.toString())
+        Log.d("s1", s1)
+        Log.d("s2", s2)
+        if (valueOne?.toBigDecimal() == myPi.toBigDecimal()) {
             s1 = "π"
         }
-        if (s2.toBigDecimal() == PI.toBigDecimal()) {
+        if (valueTwo?.toBigDecimal() == myPi.toBigDecimal()) {
             s2 = "π"
         }
         if (s1.length > 16) s1 = getFormattedHistoryString(s1)
@@ -254,8 +260,9 @@ class MathOmnissiah {
     // sets value to constant pi. updates numericString to show as 3.14. called by buttonPressed. will need to interact with boolean that tracks which value we are on.
     fun pi(): String {
         numericString = "3.14"
-        if (adjustValueOne) valueOne = PI.toString()
-        else valueTwo = PI.toString()
+        piInUse = true
+        if (adjustValueOne) valueOne = myPi.toString()
+        else valueTwo = myPi.toString()
         return numericString
     }
 
@@ -268,6 +275,10 @@ class MathOmnissiah {
         if (s.length > 16) {
             realFormat(BigDecimal(s))
         } else s
+
+    companion object {
+        const val myPi = 3.14159
+    }
 }
 
 
