@@ -1,8 +1,6 @@
 package com.example.calculator
 
-import android.content.Context
 import android.util.Log
-import android.widget.Toast
 import com.example.calculator.BigFunctions.exp
 import com.example.calculator.BigFunctions.ln
 import java.math.BigDecimal
@@ -110,7 +108,7 @@ class MathOmnissiah {
 
     // updates when an operation of any kind is pressed
     private fun updateValues(s: String?) {
-        if (piInUse) return
+        if (piInUse) {piInUse = false; return}
         if (equalsHitLast) {valueOne = numericString; return}
         if (adjustValueOne) valueOne = s
         else valueTwo = s
@@ -170,31 +168,31 @@ class MathOmnissiah {
         }
         if (!adjustValueOne) calculationHistory = when (operator) {
             "√" -> {
-                operator + s2
+                "$operator $s2 ="
             }
             "²" -> {
-                "$s2 + $operator"
+                "$s2 $operator ="
             }
             else -> {
-                "$s1 $operator $s2"
+                "$s1 $operator $s2 ="
             }
         }
         else if (adjustValueOne) calculationHistory = when (operator) {
             "√" -> {
-                operator + s1
+                "$operator$s1 ="
             }
             "²" -> {
-                s1 + operator
+                "$s1 $operator ="
             }
             else -> {
-                "$s2 $operator $s1"
+                "$s2 $operator $s1 ="
             }
         }
         return calculationHistory
     }
 
     // adds variables. called by equalsMath
-    fun add(x: String?, y: String?): String {
+    private fun add(x: String?, y: String?): String {
         if (x == null) throw IllegalStateException("Value One is Null!")
         if (y == null) throw IllegalStateException("Value Two is Null!")
         equalsHitLast = true
@@ -203,7 +201,7 @@ class MathOmnissiah {
     }
 
     // subtract variables. called by equalsMath
-    fun subtract(x: String?, y: String?): String {
+    private fun subtract(x: String?, y: String?): String {
         if (x == null) throw IllegalStateException("Value One is Null!")
         if (y == null) throw IllegalStateException("Value Two is Null!")
         equalsHitLast = true
@@ -212,7 +210,7 @@ class MathOmnissiah {
     }
 
     // multiplies variables. called by equalsMath
-    fun multiply(x: String?, y: String?): String {
+    private fun multiply(x: String?, y: String?): String {
         if (x == null) throw IllegalStateException("Value One is Null!")
         if (y == null) throw IllegalStateException("Value Two is Null!")
         equalsHitLast = true
@@ -221,7 +219,7 @@ class MathOmnissiah {
     }
 
     // divides variables. called by equalsMath
-    fun divide(x: String?, y: String?): String {
+    private fun divide(x: String?, y: String?): String {
         if (x == null) throw IllegalStateException("Value One is Null!")
         if (y == null) throw IllegalStateException("Value Two is Null!")
         equalsHitLast = true
@@ -230,7 +228,7 @@ class MathOmnissiah {
     }
 
     // exponential multiplication. called by equalsMath
-    fun power(x: String?, y: String?): String {
+    private fun power(x: String?, y: String?): String {
         if (x == null) throw IllegalStateException("Value One is Null!")
         if (y == null) throw IllegalStateException("Value Two is Null!")
         equalsHitLast = true
@@ -242,7 +240,7 @@ class MathOmnissiah {
     }
 
     // square root. called by buttonPressed
-    fun sqrt(x: String?): String {
+    private fun sqrt(x: String?): String {
         if (x == null) throw IllegalStateException("x is Null!")
         equalsHitLast = true
         numericString = bigSqrt(BigDecimal(x)).toString()
@@ -297,12 +295,14 @@ enum class Operation {
 
 
 private fun realFormat(x: BigDecimal): String {
-    var workingString: String? = null
-//    val numberOfDigits = x.toString().run {
-//        this.length -
-//                (if (this.contains("-")) 1 else 0) -
-//                (if (this.contains(".")) 1 else 0)
-//    }
+    var workingString: String?
+/*
+val numberOfDigits = x.toString().run {
+this.length -
+(if (this.contains("-")) 1 else 0) -
+(if (this.contains(".")) 1 else 0)
+}
+*/
     workingString = format(x).orEmpty()
     if (workingString.length > 16) workingString = workingString.removeRange(16,workingString.length)
     return workingString
